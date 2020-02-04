@@ -8,4 +8,8 @@ public class Bird extends Animal {
     void sing(){
         System.out.println("I am Singing");
     }
+
+    void swim() {
+        System.out.println("A duck can swim");
+    }
 }
