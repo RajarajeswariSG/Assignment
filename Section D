@@ -6,9 +6,5 @@ Hi ,Good Day :)
 I have create seperate branch for each section.
 
 Section D
-1. Create an Insects class which extends Animal, and Butterfly extends Insects and implements Fly.
 
-2. Create an Catterpillar class which extends Insects.
-	Create Metamorphosis,which has a stage method that defines the catterpillar to butterfly.
-
-
+counting Animals using Animal class and interface Swim,Fly,Walk

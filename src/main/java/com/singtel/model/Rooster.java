@@ -1,6 +1,6 @@
 package com.singtel.model;
 
-public class Rooster implements Sing {
+public class Rooster extends Animal implements Sing {
 
     boolean isChicken;
     public Rooster(boolean isChicken) {
