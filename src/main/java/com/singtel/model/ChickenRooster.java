@@ -9,4 +9,8 @@ public class ChickenRooster extends Bird {
         else
             System.out.println("Cluck, cluck");
     }
+    @Override
+    public String name() {
+        return "Chicken";
+    }
 }

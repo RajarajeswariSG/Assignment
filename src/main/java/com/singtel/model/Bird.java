@@ -1,10 +1,9 @@
 package com.singtel.model;
 
-public class Bird extends Animal implements Sing,Swim,Fly{
+public class Bird extends Animal{
    public void fly() {
         System.out.println("I am flying");
     }
-    /**1.Added the sing() method for the bird**/
     public void sing(){
         System.out.println("I am Singing");
     }
@@ -31,5 +30,35 @@ public class Bird extends Animal implements Sing,Swim,Fly{
 
     public void callSound() {
         parrotAction.makeSound();
+    }
+
+    @Override
+    public String type() {
+        return "bird";
+    }
+
+    @Override
+    public String name() {
+        return "bird";
+    }
+
+    @Override
+    public boolean canFly() {
+        return true;
+    }
+
+    @Override
+    public boolean canSing() {
+        return true;
+    }
+
+    @Override
+    public boolean canSwim() {
+        return false;
+    }
+
+    @Override
+    public boolean canWalk() {
+        return true;
     }
 }

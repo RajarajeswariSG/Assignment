@@ -1,9 +1,20 @@
 package com.singtel.model;
 
-public class Butterfly extends CatterPillar implements Fly{
+public class Butterfly extends CatterPillar{
 
-    public void fly() {
+    @Override
+    public void fly(){
         System.out.println("I am Butterfly ,can fly");
+    }
+
+    @Override
+    public boolean canFly() {
+        return true;
+    }
+
+    @Override
+    public String name() {
+        return "Butterfly";
     }
 
 }

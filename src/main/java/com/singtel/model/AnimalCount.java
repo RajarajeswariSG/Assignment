@@ -2,38 +2,68 @@ package com.singtel.model;
 
 public class AnimalCount{
 
-    public static void main(String[] args) {
-
-    Animal[] animals = new Animal[]{
-            new Bird(),
-            new Duck(),
-            new Chicken(),
-            new Rooster(false),
-            new Parrot(),
-            new Fish(),
-            new Shark(),
-            new ClownFish(),
-            new Dolphin(),
-            new Frog(),
-            new Dog(),
-            new Butterfly(),
-            new Cat()
-    };
-
-    /** Animal Count Logic**/
+    Animal[] animals;
     int singAnimalCount = 0;
     int walkAnimalCount = 0;
     int swimAnimalCount = 0;
     int flyAnimalCount = 0;
-    for(Animal animal: animals){
-        if(animal instanceof Sing) singAnimalCount++;
-        if(animal instanceof Walk) walkAnimalCount++;
-        if(animal instanceof Swim) swimAnimalCount++;
-        if(animal instanceof Fly) flyAnimalCount++;
+
+    public AnimalCount(Animal[] animals) {
+        this.animals = animals;
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i].canFly()) {
+                flyAnimalCount += 1;
+            }
+            if (animals[i].canWalk()) {
+                walkAnimalCount += 1;
+            }
+            if (animals[i].canSing()) {
+                singAnimalCount += 1;
+            }
+            if (animals[i].canSwim()) {
+                swimAnimalCount += 1;
+            }
+        }
     }
-    System.out.print("singAnimalCount: "+singAnimalCount +";"+"walkAnimalCount: "+walkAnimalCount +";"+"swimAnimalCount: "+swimAnimalCount+";"+"flyAnimalCount: "+flyAnimalCount);
 
+    public Animal[] getAnimals() {
+        return animals;
+    }
 
-}
+    public void setAnimals(Animal[] animals) {
+        this.animals = animals;
+    }
+
+    public int getSingAnimalCount() {
+        return singAnimalCount;
+    }
+
+    public void setSingAnimalCount(int singAnimalCount) {
+        this.singAnimalCount = singAnimalCount;
+    }
+
+    public int getWalkAnimalCount() {
+        return walkAnimalCount;
+    }
+
+    public void setWalkAnimalCount(int walkAnimalCount) {
+        this.walkAnimalCount = walkAnimalCount;
+    }
+
+    public int getSwimAnimalCount() {
+        return swimAnimalCount;
+    }
+
+    public void setSwimAnimalCount(int swimAnimalCount) {
+        this.swimAnimalCount = swimAnimalCount;
+    }
+
+    public int getFlyAnimalCount() {
+        return flyAnimalCount;
+    }
+
+    public void setFlyAnimalCount(int flyAnimalCount) {
+        this.flyAnimalCount = flyAnimalCount;
+    }
 
 }
