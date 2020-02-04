@@ -1,1 +1,11 @@
 
+SINGTEL 2020
+
+Hi ,Good Day :)
+
+I have create seperate branch for each section.
+
+Section A
+1.a. Added sing() method inside Bird Class.Solution class, when sing() method is called it prints "I am Singing".
+
+
