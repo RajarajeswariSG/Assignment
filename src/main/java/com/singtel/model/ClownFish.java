@@ -16,4 +16,8 @@ public class  ClownFish extends Fish {
         return CommonConstants.CLOWN_FISH_JOKES;
     }
 
+    @Override
+    public String name() {
+        return "ClownFish";
+    }
 }

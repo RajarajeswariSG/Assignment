@@ -1,6 +1,6 @@
 package com.singtel.model;
 
-public class Chicken extends Bird implements Sing,Fly {
+public class Chicken extends Bird {
     @Override
     public void fly() {
         System.out.println("A chicken cannot fly");

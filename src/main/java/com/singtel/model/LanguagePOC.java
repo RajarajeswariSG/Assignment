@@ -51,8 +51,4 @@ public class LanguagePOC {
         }
     }
 
-    public static void main(String[] args) {
-        System.out.println("Rooster Says ;"+ translate("Cock-a-doodle-doo",RoosterLanguageEnums.DANISH));
-
-    }
 }

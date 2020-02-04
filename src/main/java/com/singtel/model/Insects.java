@@ -1,4 +1,13 @@
 package com.singtel.model;
 
-public class Insects extends Animal{
+public abstract class Insects extends Animal{
+    @Override
+    public String type() {
+        return "insects";
+    }
+
+    @Override
+    public String name() {
+        return "Insects";
+    }
 }

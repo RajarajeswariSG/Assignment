@@ -30,4 +30,16 @@ public class CommonConstants {
     public static final String SWEDISH = "kuckeliku";
     public static final String TURKISH = "kuk-kurri-kuuu";
     public static final String URDU = "kuklooku";
+    /**REST API**/
+    public static final String BIRD = "BIRD";
+    public static final String DUCK = "DUCK";
+    public static final String CHICKEN = "CHICKEN";
+    public static final String PARROT = "PARROT";
+    public static final String FISH = "FISH";
+    public static final String SHARK = "SHARK";
+    public static final String CLOWNFISH = "CLOWNFISH";
+    public static final String DOLPHIN = "DOLPHIN";
+    public static final String BUTTERFLY = "BUTTERFLY";
+    public static final String CATERPILLAR = "CATERPILLAR";
+
 }

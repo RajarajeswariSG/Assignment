@@ -6,5 +6,9 @@ Hi ,Good Day :)
 I have create seperate branch for each section.
 
 Bonus
-1.Localisation , based on the language rooster reply sound
-eg: Rooster language "DANISH" ,it says "kykyliky"
+2.REST webservice get List of animals and behaviour
+eg;
+1.http://localhost:9000/stat/BIRD
+{"animal":{"type":"bird","name":"bird","swim":"I cannot Swim","walk":"I am Walking","sing":"I am Singing"}}
+2.http://localhost:9000/stat/CLOWNFISH
+{"animal":{"type":"animal","name":"ClownFish","swim":"I am Swimming","walk":"I cannot walk","sing":"I cannot sing"}}
