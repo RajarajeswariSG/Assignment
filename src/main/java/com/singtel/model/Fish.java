@@ -11,6 +11,13 @@ public class Fish extends Animal implements Swim {
         fish.swim();
     }
 
-   
+    //B.2
+    public String bodySize() {
+        return null;
+    }
+
+    public String bodyColor() {
+        return null;
+    }
 }
 
